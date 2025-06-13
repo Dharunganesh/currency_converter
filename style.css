@@ -1,0 +1,56 @@
+#heading{
+    text-align:center;
+}
+#from{
+    text-align:center;
+}
+#to{
+    text-align:center;
+}
+#input_amount{
+    text-align:center;
+}
+#output_amount{
+    text-align:center;
+}
+#input,
+#output {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+body{
+    background-color: beige;
+}
+label{
+    font-size:20px;
+}
+legend{
+    font-size:25px;
+}
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers the child items horizontally */
+    gap: 20px;            /* spacing between input and output blocks */
+    padding: 40px 20px;
+    background-color: azure;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+#submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}

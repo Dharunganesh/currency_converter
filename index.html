@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage for currency conversion"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Currency_Converter</title>
+</head>
+<body>
+    <div id="heading">
+        <h1 style="color:red; font-size:70px;">CURRENCY CONVERTOR</h1>
+    </div>
+    <div id="body">
+    <div id="input">
+        <fieldset style="width:400px;">
+            <legend>Enter the inputs:</legend>
+            <div id="from">
+            <label for="from">Current Currency Type : </label>
+            <select id="from_currency" style="width:120px;">
+                <option selected value="USD">US-Dollar</option>
+                <option value="INR">Indian-Rupee</option>
+                <option value="POUND">UK-Pound</option>
+            </select>
+            </div>
+            <br>
+            <div id="to">
+            <label for="to">Required Currency Type : </label>
+            <select id="to_currency" style="width:120px;">
+                <option value="USD">US-Dollar</option>
+                <option selected value="INR">Indian-Rupee</option>
+                <option value="POUND">UK-Pound</option>
+            </select>
+            </div>
+            <br>
+            <div id="input_amount">
+                <label for="amount">Input Amount : </label>
+                <input type="number" id="input_amount1" name="amount">
+            </div>
+            <br>
+            <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                <button type="submit" id="submit" onclick="convert()">Submit</button>
+            </div>
+
+        </fieldset>
+        </div>
+        <br>
+        <div id="output">
+        <fieldset style="width:400px;">
+            <legend>Output:</legend>
+            <div id="output_amount">
+            <label for="output_amount">Output Amount : </label>
+            <input type="number" name="output_amount" id="output_amount1" readonly>
+            </div>
+        </fieldset>
+        </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
