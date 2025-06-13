@@ -1,5 +1,5 @@
 function convert(){
-    let amount=document.getElementById("input_amount1").value;
+    let amount=parseFloat(document.getElementById("input_amount1").value);
     let fromCurrency = document.getElementById("from_currency").value;
     let toCurrency = document.getElementById("to_currency").value;
     let convertedAmount = 0;
